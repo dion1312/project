@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" type="text/css" href="CSS/projectstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navigator">
+        <a href="project1.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="courses1.html" ><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="trainers1.html"><i class="fa fa-fw fa-user"></i>Traines</a>
+        <a href="students1.html"><i class="fa fa-fw fa-graduation-cap"></i>Students</a>
+        <a href="assignments1.html"><i class="fa fa-fw fa-open fa-book"></i>Assignments</a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <form action="">
+        <h2>Στοιχεία Μαθητή</h2>
+        <p>
+            <label for="studentFName">First Name: </label>
+            <input type="text" name="studentFName" id="studentFName" title="studentFName" required>
+        </p>
+        <p>
+            <label for="studentLName">Last Name: </label>
+            <input type="text" name="studentLName" id="studentLName" title="studentLName" required>
+        </p>
+        <p>
+            <label for="studentDate">Date Of Birth: </label>
+            <input type="date" name="studentDate" id="studentDate" title="studentDate" required>
+        </p>
+        <p>
+            <label for="studentFees">Tuition Fees: </label>
+            <input type="number" name="studentFees" id="studentFees" title="studentFees" min="0" max="2500" placeholder="€">
+        </p>
+        <button type="submit" id="submit">Add</button>
+        <button type="submit" id="update" hidden>Update</button>
+        <button type="reset" id="reset">Reset</button> 
+        <br>
+        <table>
+            <tr>
+              <th>'Ονομα Μαθητή</th>
+              <th>Επώνυμο Μαθητή</th>
+              <th>Ημερομηνία Γέννησης</th>
+              <th>Δίδακτρα</th>
+            </tr>
+            <tr>
+              <td>Διονύσης</td>
+              <td>Τζοβάρας</td>
+              <td>23-8-94</td>
+              <td>300 ευρω</td>
+            </tr>
+            <tr>
+              <td>Μαρία</td>
+              <td>Κασιδόκωστα</td>
+              <td>6-4-95</td>
+              <td>100 ευρω</td>
+            </tr>
+            <tr>
+              <td>Κώστας</td>
+              <td>Παπαδόπουλος</td>
+              <td>18-7-89</td>
+              <td>0 ευρω</td>
+            </tr>
+            <tr>
+                <td>Κώστας</td>
+                <td>Μονοκρούσος</td>
+                <td>4-8-94</td>
+                <td>125 ευρω</td>
+            </tr>
+            <tr>
+                <td>Δημήτρης</td>
+                <td>Συρόπουλος</td>
+                <td>13-9-93</td>
+                <td>0 ευρω</td>
+            </tr>
+            <tr>
+                <td>Ελένη</td>
+                <td>Παπαδάκη</td>
+                <td>7-3-89</td>
+                <td>350 ευρω</td>
+            </tr>
+          </table> 
+          <h2>Νέος Μαθητής :</h2>
+    </form> 
+    <div id="students">
+    </div> 
+    <script src="students1.js"></script>
+</body>
+</html>

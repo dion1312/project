@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <link rel="stylesheet" type="text/css" href="CSS/projectstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navigator">
+        <a href="project1.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="courses1.html" ><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="trainers1.html"><i class="fa fa-fw fa-user"></i>Traines</a>
+        <a href="students1.html"><i class="fa fa-fw fa-graduation-cap"></i>Students</a>
+        <a href="assignments1.html"><i class="fa fa-fw fa-open fa-book"></i>Assignments</a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <form action="">
+        <h2>Εργασίες</h2>
+        <label for="assignmentName">Εργασία:</label>
+         <select name="assignmentName" id="assignmentName" required>;
+            <option></option>
+            <option value="Assignment C#">Assignment C#</option>
+            <option value="Assignment Java">Assignment Java</option>
+            <option value="Assignment JavaScript">Assignment JavaScript</option>
+            <option value="Assignment Final">Final Assignment</option>
+         </select>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <label for="subdate"> Ημερομηνία οριστικής παράδοσης:</label>
+         <input type="date" id="subdate" name="subdate" title="subdate" required>
+         <br>
+         <!--
+          <p>
+           <table class="center">
+            <tr>
+              <th>Προφορικός βαθμός:</th>
+              <th>Βαθμός Εργασίας:</th>
+              <th>Συνολικός Βαθμός:</th>
+            </tr>
+            <tr>
+              <td>
+                <label for="oralMark"> Προφορικός βαθμός(%):</label>
+                <input type="number" id="oralMark" name="oralMark" title="oralMark">
+              </td>
+              <td>
+                <label for="assignmentMark"> Γραπτός βαθμός(%):</label>
+                <input type="number" id="assignmentMark" name="assignmentMark" title="assignmentMark">
+              </td>
+              <td>
+                <label for="totalMark"> Συνολικός βαθμός(%):</label>
+                <input type="number" id="totalMark" name="totalMark" title="totalMark">
+              </td>
+            </tr>
+          </table> 
+        </p>-->
+        <br>
+          <button type="submit" id="submit">Add</button>
+          <button type="submit" id="update" hidden>Update</button>
+          <button type="reset" id="reset">Reset</button>
+          <br>
+        <table>
+            <tr>
+              <th>Εργασία</th>
+              <th>Αναφορικά με την Εργασία</th>
+              <th>Ημερομηνία οριστικής παράδοσης</th>
+            </tr>
+            <tr>
+              <td>Assignment C#</td>
+              <td>Να φτιαχτεί πρόγραμμα που διαβάζει βαθμούς κελσίου και τους μετατρέπει σε φάρεναιτ </td>
+              <td>23-12-22</td>
+            </tr>
+            <tr>
+              <td>Assignment Java</td>
+              <td>Να φτιαχτεί πρόγραμμα που υπολογίζει το άθροισμα Ν αριθμών,καθώς και το γινόμενο αυτών</td>
+              <td>28-12-22</td>
+            </tr>
+            <tr>
+              <td>Assignment JavaScript</td>
+              <td>Να δημιουργηθεί μια φόρμα εγγραφής νέου μαθήτη σε ένα σχολείο του οποίου τα στοιχεία να αποθηκέυονται σε εναν πίνακα</td>
+              <td>24-12-22</td>
+            </tr>
+            <tr>
+              <td>Final Assignment</td>
+              <td>Περισσότερες πληροφορίες θα δωθούν όταν είναι η ώρα της έναρξης του</td>
+              <td>20-2-23</td>
+            </tr>
+          </table> 
+         <h2>Νέα Εργασία :</h2> 
+    </form>
+    <div id="assignments">
+    </div> 
+    <script src="assignments1.js"></script>
+</body>
+</html>

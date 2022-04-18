@@ -1,0 +1,76 @@
+body{
+    background-image: url(https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/07/CSS-background-gradient-featured.jpg?q=50&fit=contain&w=1500&h=750&dpr=1.5);
+}
+.navigator{ 
+    background-color: darkcyan;
+    float: left;
+    color:black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration:double;
+    font-size: 17px; 
+} 
+.navigator a:hover{
+    background-color:orangered;
+    color: white;
+}
+#homeParagraph{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+}
+h1{
+    font-family: cursive;
+    size: 500px;
+    color: slategrey;
+}
+h2{
+    font-family: serif;
+    size: 600px;
+    color: black;
+}
+.mapouter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+h3{
+    color: darkslateblue;
+    text-align: center;
+}
+form{
+
+    box-sizing: border-box;
+    padding: 16px;
+}
+input{
+    width: 50%;
+    padding: 15px;
+    margin: 10px 0 22px 0;
+    background:rgb(192, 138, 84)
+}
+input[type=submit],input[type=reset]{
+    width: 20%;
+
+}
+input:focus{
+    background-color: #ddd;
+}
+select{
+    background:rgb(192, 138, 84);
+}
+table th, td {
+    border: 1px solid;
+    padding: 15px;
+    text-align: center;
+}
+th {
+    background-color: brown;
+    color: white;
+  }
+  input:required {
+    border: 1px dashed red;
+  }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" type="text/css" href="CSS/projectstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navigator">
+        <a href="project1.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="studentPerCourse.html" >For Student</a>
+        <a href="trainerPerCourse.html" >For Traines</a>
+        <a href="assignmentPerCourse.html" >For Assignments</a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <form action="">
+        <h2>Μαθήματα</h2>
+        <p>
+        <label for="courseName">Μάθημα:</label>
+         <select name="courseName" id="courseName" required>;
+            <option></option>
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+            <option value="JavaScript">JavaScript</option>
+         </select>
+        </p>
+        <br>
+        <br>
+        <br>
+        <p>
+             <label for="typosMathimatos">Ώρες Μαθήματος:</label>
+             <select name="typosMathimatos" id="typosMathimatos" required>;
+                <option></option>
+                <option value="Πρωινό 8:00-12:00">Πρωινό 8:00-12:00</option>
+                <option value="Απογευματινό 18:00-22:00">Απογευματινό 18:00-22:00</option>
+             </select>
+        </p>
+        <br>
+        <br>
+        <br>
+        <p>
+            <label for="fromDate">Ημέρα Έναρξης</label> 
+            <input type="date" name="fromDate" id="fromDate" title="fromDate" required>
+            <br>
+            <label for="toDate">Ημέρα Λήξης</label>
+            <input type="date" name="toDate" id="toDate" title="toDate" required>
+        </p>
+        <br>
+        <button type="submit" id="submit">Add</button>
+        <button type="submit" id="update" hidden>Update</button>
+        <button type="reset" id="reset">Reset</button>
+        <table>
+            <tr>
+              <th>Μάθημα</th>
+              <th>Ώρες Μαθήματος</th>
+              <th>Ημέρα Έναρξης</th>
+              <th>Ημέρα Λήξης</th>
+            </tr>
+            <tr>
+              <td>C#</td>
+              <td>Πρωινό</td>
+              <td>23-9-22</td>
+              <td>23-2-23</td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td>Πρωινό</td>
+              <td>23-9-22</td>
+              <td>23-2-23</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Απογευματινό</td>
+              <td>24-9-22</td>
+              <td>24-2-23</td>
+              </tr>
+          </table> 
+          <h2>Νέο Μάθημα :</h2>
+    </form>
+    <div id="courses">
+    </div> 
+    <script src="courses1.js"></script>
+    
+</body>
+</html>

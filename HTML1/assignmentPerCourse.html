@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Per Course</title>
+    <link rel="stylesheet" type="text/css" href="CSS/projectstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navigator">
+      <a href="project1.html"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="courses1.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+      <a href="studentPerCourse.html" >For Student</a>
+      <a href="trainerPerCourse.html" >For Traines</a>
+      <a href="assignmentPerCourse.html" >For Assignments</a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <form action="">
+        <h2>Εργασίες ανα Μάθημα</h2>
+
+        <p>
+            <label for="coursePerAssignment">Μάθημα:</label>
+             <select name="coursePerAssignment" id="coursePerAssignment" required>;
+                <option></option>
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+             </select>
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+            <label for="assignmentPerCourse">Εργασίες:</label>
+            <select name="assignmentPerCourse" id="assignmentPerCourse" multiple required>
+                <option></option>
+                <option value="Assignment C#">Assignment C#</option>
+                <option value="Assignment Java">Assignment Java</option>
+                <option value="Assignment JavaScript">Assignment JavaScript</option>
+                <option value="Final Assignment">Final Assignment</option>
+             </select>
+            </p>
+            <table>
+                <tr>
+                  <th>Μάθημα</th>
+                  <th>Εργασίες</th>
+                </tr>
+                <tr>
+                  <td>C#</td>
+                  <td>Assignment C#, Final Assignment</td>
+                </tr>
+                <tr>
+                  <td>Java</td>
+                  <td>Assignment Java, Final Assignment</td>
+                </tr>
+                <tr>
+                  <td>JavaScript</td>
+                  <td>Assignment JavaScript, Final Assignment</td>
+                </tr>
+              </table> 
+            <br>
+            <button type="submit" id="submit">Add</button>
+            <button type="submit" id="update" hidden>Update</button>
+            <button type="reset" id="reset">Reset</button>
+            <br>
+
+        </form>
+        <div id="assignments">
+        </div> 
+        <script src="assignmentPerCourse.js"></script>
+    
+</body>
+</html>

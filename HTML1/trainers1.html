@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainers</title>
+    <link rel="stylesheet" type="text/css" href="CSS/projectstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navigator">
+        <a href="project1.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="courses1.html"><i class="fa fa-fw fa-book"></i>Courses</a>
+        <a href="trainers1.html"><i class="fa fa-fw fa-user"></i>Traines</a>
+        <a href="students1.html"><i class="fa fa-fw fa-graduation-cap"></i>Students</a>
+        <a href="assignments1.html"><i class="fa fa-fw fa-open fa-book"></i>Assignments</a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <form action="">
+        <h2>Στοιχεία Καθηγητή</h2>
+        <p>
+            <label for="trainerFName">First Name: </label>
+            <input type="text" name="trainerFName" id="trainerFName" title="trainerFName">
+        </p>
+        <p>
+            <label for="trainerLName">Last Name: </label>
+            <input type="text" name="trainerLName" id="trainerLName" title="trainerLName" required>
+        </p>
+        <p>
+            <label for="trainerEidikothta">Ειδικότητα: </label>
+            <select name="trainerEidikothta" id="trainerEidikothta" required>;
+                <option></option>
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+               </select> 
+        </p>
+        <br>
+        <br>
+        <br>
+        <button type="submit" id="submit">Add</button>
+        <button type="submit" id="update" hidden>Update</button>
+        <button type="reset" id="reset">Reset</button>
+        <br>
+        <table>
+            <tr>
+              <th>'Ονομα Καθηγητή</th>
+              <th>Επώνυμο Καθηγητή</th>
+              <th>Ειδικότητα</th>
+            </tr>
+            <tr>
+              <td>Ζινεντίν</td>
+              <td>Ζιντάν</td>
+              <td>C#</td>
+            </tr>
+            <tr>
+              <td>Μάρκος</td>
+              <td>Βανμπάστεν</td>
+              <td>Java</td>
+            </tr>
+            <tr>
+              <td>Γιόχαν</td>
+              <td>Κρόυφ</td>
+              <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>Ρονάλντο</td>
+                <td>Φαινόμενο</td>
+                <td>JavaScript</td>
+            </tr>
+          </table> 
+         <h2>Νέος  Καθηγητής :</h2> 
+    </form>
+    <div id="trainers"></div>
+    <script src="trainers1.js"></script>
+    
+</body>
+</html>
